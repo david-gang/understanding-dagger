@@ -8,4 +8,5 @@ import javax.inject.Singleton;
 @Component(modules={ConfigurationModule.class})
 interface Etl {
     DBClient client();
+    SessionComponent sessionComponent(SessionModule sessionModule);
 }
