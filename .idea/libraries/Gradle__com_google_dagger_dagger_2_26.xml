@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.dagger:dagger:2.26">
+    <CLASSES>
+      <root url="file://$APPLICATION_HOME_DIR$/bin/Cannot resolve external dependency com.google.dagger:dagger:2.26 because no repositories are defined." />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.26/3715c6130d728018ad15a2837d4c52e11b092d6e/dagger-2.26.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.26/2ee065d2b93bb5301ff13ed18834ccafa3a1ce97/dagger-2.26-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

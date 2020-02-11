@@ -1,0 +1,14 @@
+apply plugin: 'idea'
+//and standard one
+apply plugin: 'java'
+
+repositories {
+    google()
+    jcenter()
+}
+
+// Add Dagger dependencies
+dependencies {
+    implementation 'com.google.dagger:dagger:2.26'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.26'
+}
