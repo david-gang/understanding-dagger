@@ -7,6 +7,5 @@ import javax.inject.Singleton;
 @Singleton
 @Component(modules={ConfigurationModule.class})
 interface Etl {
-    DBClient client();
     SessionComponent sessionComponent(SessionModule sessionModule);
 }
