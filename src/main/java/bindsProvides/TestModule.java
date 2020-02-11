@@ -4,9 +4,9 @@ import dagger.Module;
 import dagger.Provides;
 
 @Module
-public class VWModule {
+class TestModule {
     @Provides
     Engine provideVwEngine(){
-        return new VWEngine(10);
+        return new TestEngine(10);
     }
 }

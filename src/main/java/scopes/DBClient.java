@@ -7,22 +7,24 @@ class DBClient {
     private final ConnectionPool connectionPool;
     private final HeavyClass heavyClass;
 
+    @Inject
+    SessionData sessionData;
+    @Inject
+    SessionManager sessionManager;
+
     @Override
     public String toString() {
         return "DBClient{" +
                 "connectionPool=" + connectionPool +
                 ", heavyClass=" + heavyClass +
                 ", sessionData=" + sessionData +
+                ", sessionManager=" + sessionManager +
                 '}';
     }
 
-    private final SessionData sessionData;
-
     @Inject
-    DBClient(ConnectionPool connectionPool, HeavyClass heavyClass,SessionData sessionData) {
+    DBClient(ConnectionPool connectionPool, HeavyClass heavyClass) {
         this.connectionPool = connectionPool;
         this.heavyClass = heavyClass;
-        this.sessionData = sessionData;
-
     }
 }

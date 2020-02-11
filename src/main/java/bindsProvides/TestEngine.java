@@ -1,9 +1,9 @@
 package bindsProvides;
 
-public class VWEngine implements Engine {
+public class TestEngine implements Engine {
     private final double fakeValue;
 
-    VWEngine(double fakeValue){
+    TestEngine(double fakeValue){
         this.fakeValue = fakeValue;
     }
     @Override

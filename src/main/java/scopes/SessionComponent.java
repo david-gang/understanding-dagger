@@ -6,5 +6,5 @@ import dagger.Subcomponent;
 @Subcomponent(modules = {SessionModule.class})
 @SessionScope
 public interface SessionComponent {
-    SessionData data();
+    void inject(DBClient client);
 }

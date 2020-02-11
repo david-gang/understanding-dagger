@@ -21,20 +21,93 @@
 
 class: center, middle
 
-# Title
+# Understanding Dagger
 
 ---
 
 # Agenda
 
-1. Introduction
-2. Deep-dive
-3. ...
+1. Dependency Injection
+2. Why Dagger
+3. Code
+
+תֵּן לְחָכָם וְיֶחְכַּם עוֹד הוֹדַע לְצַדִּיק וְיוֹסֶף לֶקַח. 
 
 ---
 
-# Introduction
+# Dependency Injection
+``` java
+class ShoppingManager{
+ShoppingManager(String country, String currency,String stripeUrl,
+        String stripeUsername, String password, String shoppingCartId){
+    TaxCalculator calculator = new TaxCalculator(country, currency);
+    Stripe stripe = new Stripe(stripeUrl,stripePassword);
+    Shoppingcart cart = ShoppingCartManager.getShoppingCart(shoppingCartId);
 
+    this.calculator = calculator;
+    this.stripe = stripe;
+    this.cart = cart;
+
+   }
+   public purchase(String itemId){
+     ...
+   }
+}
+```
+ Unit test:
+
+ ```java
+ class ShoppingManagerTest {
+   ShoppingManager manager;
+   @Before
+   public init() {
+      manager = new ShoppingManager("Israel", "NIS", 
+      "https://stripe.api.com/v1", "admin", "1234", "8");
+   }
+
+   @test
+   public test() {
+     //get me a nice gucci coat
+     manager.purchase("gsdgfhgfahj")
+     assert(....)
+   }
+ }
+ ```
+
+---
+
+# What is the problem?
+
+
+---
+
+#Dependency injection to the rescue
+
+``` java
+class ShoppingManager{
+ShoppingManager(TaxCalculator calculator ,Stripe stripe, Shoppingcart cart){
+    this.calculator = calculator;
+    this.stripe = stripe;
+    this.cart = cart;
+   }
+   public purchase(String itemId){
+     ...
+   }
+}
+```
+
+
+---
+
+# But now we just moved the problem
+
+
+
+---
+
+# Dagger to the rescue
+
+---
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
