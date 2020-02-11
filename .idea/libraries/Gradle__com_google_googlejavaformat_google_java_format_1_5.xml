@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.googlejavaformat:google-java-format:1.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.googlejavaformat/google-java-format/1.5/fba7f130d29061d2d2ea384b4880c10cae92ef73/google-java-format-1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.googlejavaformat/google-java-format/1.5/a923662d9d3e11c63844cf4ae308c5a6b0292782/google-java-format-1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
