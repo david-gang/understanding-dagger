@@ -33,3 +33,12 @@ The code in DaggerGarage.java is like handwritten code.
 * DoublecheckProvider ensures that ut is same object
 * Singleton is just a scope
 
+## bindsInto
+
+* Communicate with external framework through factories
+* bindsinto
+
+## lazy 
+
+* Object gets created on get call
+* Demonstrate inject
